@@ -1,0 +1,64 @@
+1. sorting string
+#include<algorithm>
+sort(str1.begin(), str2.end());
+
+2. convert whole string to lowercase
+#include <algorithm>
+transform(str1.begin(), str1.end(), str1.begin(), ::tolower );
+
+3. remove spaces from string
+str.erase(remove(str.begin(),str.end(), ' '), str.end());
+
+4. add two vectors together
+#include <algorithm>
+#include <functional>
+transform(v1.begin(), v1.end(), v2.begin(), v1.begin(), ::plus<int>() );
+
+5. bitset
+#include<bitset>
+bitset<128> foo //initialized to 0
+foo.set(), foo.reset() //all become 1 or 0
+foo.set(2,1) //set the bit at position 2 to 1
+foo.test(2) //test the bit at position 2
+foo.any(), foo.all(), foo.none()
+foo.flip(), foo.flip(2)
+
+6. c++ auto
+for(auto i: v) //iterates through vector v, i is the value
+	for(auto x : i) //if 2d vector
+for(int n: {0,1,2,3})
+for(int n: arr)
+for(char c: str)
+for(auto i: MAP)
+	i.first, i.second
+
+7. for_each
+#include <algorithm>
+void func(int i) {cout << i << ' ';}
+for_each(v.begin(), v.end(), func);
+
+8. .begin() for string or vector, just arr for array
+
+9. pass in 1D array as parameter
+void function(int *arr, int size)
+void function(int arr[], int size)
+void function(int arr[10]) ?
+
+10. 2D vector initialization
+vector<vector<int>> vec(M, vector<int>(N, default_val));
+vector<vector<int>> vec= {{1,2,3}, {4,5,6}}
+
+11. comaparing elements
+*max_element(v.begin(), v.end())
+max(7,8)
+equal(v1.begin(), v1.end(), v2.begin())
+
+12. watch
+#define watch(x) cout << (#x) << " is " << (x) << endl;
+//for debugging, call watch(x)
+
+13. typedef long long ll
+
+14. ios::sync_with_stdio(false)
+//cout, cin as fast as printf,scanf
+//i don't know why

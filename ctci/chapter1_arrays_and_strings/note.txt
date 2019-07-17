@@ -62,3 +62,8 @@ equal(v1.begin(), v1.end(), v2.begin())
 14. ios::sync_with_stdio(false)
 //cout, cin as fast as printf,scanf
 //i don't know why
+
+15. dealing with 2d arrays
+int ** matrix = new int*[N]
+call(matrix,N)
+void function(int ** matrix, int N)

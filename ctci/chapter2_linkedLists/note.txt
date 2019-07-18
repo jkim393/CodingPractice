@@ -7,3 +7,15 @@ if(hashTable.find(value) == hashTable.end() ) //not found
 2. list
 iter = l.erase(position) // returns the next position
 l.remove(value) // removes all elements of that value
+
+3. delete pointer
+good practice:
+1. delete ptr  //frees the data that ptr points
+2. ptr = nullptr //make sure ptr is not pointing to random value
+
+4. delete struct
+set the ptr of the struct to null first
+delete the struct
+
+5. smart pointer
+https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one

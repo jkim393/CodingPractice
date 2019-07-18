@@ -43,6 +43,27 @@ void partition(Node * current, int K){
 
 }
 
+//head and tail method
+Node* partition2(Node * current, int x){
+	Node* head = current;
+	Node* tail = current;
+
+	while(current){
+		Node * next = current->next; //save the next here since it will get changed
+		if(current->data < x){ //insert at head
+			current->next = head;
+			head = current;
+		}
+		else { //insert at tail
+			tail->next = current;
+			tail = current;
+		}
+		current = next;
+	}
+	tail->next = nullptr;
+	return head;
+}
+
 int main(){
 	srand(time(NULL));
 
@@ -61,8 +82,9 @@ int main(){
 
 	cout << endl;
 
-	partition(head, K);
-
+	//partition(head, K);
+	head = partition2(head, K);
+	printList(head);
 
 	return 0;
 

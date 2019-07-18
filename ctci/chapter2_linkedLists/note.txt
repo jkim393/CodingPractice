@@ -1,0 +1,9 @@
+1. unordered set
+#include<unordered_set>
+unordered_set<int> hashTable;
+if(hashTable.find(value) == hashTable.end() ) //not found
+.insert()
+
+2. list
+iter = l.erase(position) // returns the next position
+l.remove(value) // removes all elements of that value

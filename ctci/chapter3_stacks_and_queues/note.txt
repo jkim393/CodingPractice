@@ -1,0 +1,19 @@
+1. list
+front()
+back()
+push_front()
+push_back()
+pop_front()
+pop_back()
+empty()
+size()
+erase() single element or a range
+remove() removes everything
+rbegin(), rend() reverse
+
+2. new T() or new T
+same if they are not Plain Old Data
+if Plain old data, () will set it to 0
+
+3. template <typename T>
+T function(T x, Ty)

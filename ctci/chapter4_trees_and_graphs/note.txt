@@ -1,0 +1,24 @@
+0. To study
+https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+BFS
+DFS
+Bidirectional search
+Binary search tree
+Red Black Tree
+AVL Tree
+Min Spanning Tree (Prim, Kruskal)
+Topological sort
+Dijkstra
+preorder,inorder,postorder
+
+1. convert array to vector
+int x[3] = {1, 2, 3};
+vector<int> v(x, x + sizeof x / sizeof x[0]);
+
+C++ 11 #include <iterator>
+vector<int> v(std::begin(x), std::end(x));
+
+2. using vector for adjacency list implementation of graph
+vector <int> adj[size]; 
+or
+vector<int> * adj = new vector<int>[size];

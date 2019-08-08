@@ -24,3 +24,6 @@ or
 vector<int> * adj = new vector<int>[size];
 
 3. unordered_map hash table
+
+4. #include <limits>
+double a = std::numeric_limits<double>::infinity();

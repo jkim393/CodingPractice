@@ -22,3 +22,5 @@ vector<int> v(std::begin(x), std::end(x));
 vector <int> adj[size]; 
 or
 vector<int> * adj = new vector<int>[size];
+
+3. unordered_map hash table

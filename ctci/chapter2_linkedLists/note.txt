@@ -19,3 +19,6 @@ delete the struct
 
 5. smart pointer
 https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one
+
+6. max
+*max_element(a.begin(), a.end());
